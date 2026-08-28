@@ -56,7 +56,7 @@ export function ArticleMain() {
         <figure className="mt-6 pt-4 border-t border-[#2c1d11]/20 space-y-2">
           <div className="border border-[#2c1d11] bg-[#fdfbf7] p-4 shadow-[2px_2px_0px_#2c1d11] overflow-hidden rounded-xs flex items-center justify-center">
             <img
-              src="/backup_bean_clean.png"
+              src="/backup_bean_clean.webp"
               alt="The Backup Bean cellular coffee production system diagram"
               className="w-full max-w-sm h-auto object-contain transition-all duration-300"
             />
@@ -122,7 +122,7 @@ export function ArticleWaste() {
         <figure className="mt-6 pt-4 border-t border-[#2c1d11]/20 space-y-2 flex flex-col items-center">
           <div className="border border-[#2c1d11] bg-[#fdfbf7] p-1.5 shadow-[2px_2px_0px_#2c1d11] rounded-xs max-w-xs w-full">
             <img
-              src="/dr_nimimo_maolg.jpg"
+              src="/dr_nimimo.webp"
               alt="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance"
               className="w-full h-auto object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300 rounded-xs"
             />
