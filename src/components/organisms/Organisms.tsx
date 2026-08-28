@@ -6,7 +6,7 @@ export function ArticleMain() {
   return (
     <article className="mb-10 pb-8 border-b-2 border-[#1c1917]">
       <Badge variant="dark" className="mb-3">
-        Main Article • Looking Back From 2046
+        SPECIAL RETROSPECTIVE REPORT • 2026–2046
       </Badge>
 
       <h2 className="font-serif text-3xl sm:text-5xl font-black leading-tight text-[#1c1917] mb-6">
@@ -60,7 +60,7 @@ export function ArticleWaste() {
   return (
     <article className="mb-10 pb-8 border-b-2 border-[#1c1917]">
       <Badge variant="green" className="mb-3">
-        Second Article • August 2046
+        SUSTAINABILITY & CIRCULARITY • AUGUST 2046
       </Badge>
 
       <h2 className="font-serif text-3xl sm:text-4xl font-black leading-tight text-[#1c1917] mb-6">
