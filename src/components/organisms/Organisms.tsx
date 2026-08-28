@@ -4,7 +4,7 @@ import { AccomplishmentsBox } from "../molecules/Molecules";
 
 export function ArticleMain() {
   return (
-    <article className="mb-10 pb-8 border-b-2 border-[#1c1917]">
+    <article className="mb-10 p-6 md:p-8 bg-[#f4ece1] border-2 border-[#2c1d11] shadow-[4px_4px_0px_#2c1d11] rounded-md">
       <Badge variant="dark" className="mb-3">
         SPECIAL RETROSPECTIVE REPORT • 2026–2046
       </Badge>
@@ -48,13 +48,13 @@ export function ArticleMain() {
           Today, farm-grown coffee is a proud premium choice, and lab-grown coffee is the reliable, everyday option. Coffee stayed a daily ritual for everyone — not just the few who could afford it.
         </p>
 
-        <QuoteText className="bg-[#f4ece1] border-[#8c6d46]">
+        <QuoteText className="bg-[#fdfbf7] border-[#8c6d46]">
           &ldquo;We built the backup before we needed it. That’s what saved the cup.&rdquo;
         </QuoteText>
 
         {/* Editorial Diagram of The Backup Bean System */}
         <figure className="mt-6 pt-4 border-t border-[#2c1d11]/20 space-y-2">
-          <div className="border border-[#2c1d11] bg-[#f4ece1] p-4 shadow-[3px_3px_0px_#2c1d11] overflow-hidden rounded-xs flex items-center justify-center">
+          <div className="border border-[#2c1d11] bg-[#fdfbf7] p-4 shadow-[2px_2px_0px_#2c1d11] overflow-hidden rounded-xs flex items-center justify-center">
             <img
               src="/backup_bean_clean.png"
               alt="The Backup Bean cellular coffee production system diagram"
@@ -72,14 +72,14 @@ export function ArticleMain() {
 
 export function SectionWhyItMatters() {
   return (
-    <section className="my-8 p-6 bg-[#f4ece1] border-2 border-[#2c1d11] rounded-sm shadow-[3px_3px_0px_#2c1d11]">
-      <div className="flex items-center gap-2 mb-2">
-        <span className="w-2.5 h-2.5 bg-[#8c6d46] rounded-full"></span>
-        <h3 className="font-serif text-xl sm:text-2xl font-black uppercase text-[#1c1917] tracking-wide">
+    <section className="my-10 p-6 md:p-8 bg-[#2c1d11] text-[#fdfbf7] border-2 border-[#2c1d11] rounded-md shadow-[4px_4px_0px_#8c6d46]">
+      <div className="flex items-center gap-2.5 mb-3">
+        <span className="w-3 h-3 bg-[#8c6d46] rounded-full"></span>
+        <h3 className="font-serif text-xl sm:text-2xl font-black uppercase text-[#fdfbf7] tracking-wide">
           Why It Matters
         </h3>
       </div>
-      <p className="font-serif text-base md:text-lg text-[#2c2416] leading-relaxed italic">
+      <p className="font-serif text-base md:text-lg text-[#f4ece1] leading-relaxed italic">
         Humanity has always lived with limited resources. The future depends on how carefully we consume them — and on our ability to develop circular economy technologies that turn waste back into value.
       </p>
     </section>
@@ -88,7 +88,7 @@ export function SectionWhyItMatters() {
 
 export function ArticleWaste() {
   return (
-    <article className="mb-10 pb-8 border-b-2 border-[#2c1d11]">
+    <article className="mb-10 p-6 md:p-8 bg-[#f4ece1] border-2 border-[#2c1d11] shadow-[4px_4px_0px_#2c1d11] rounded-md">
       <Badge variant="green" className="mb-3">
         SUSTAINABILITY & CIRCULARITY • AUGUST 2046
       </Badge>
@@ -110,7 +110,7 @@ export function ArticleWaste() {
           Today, more than <strong>70% of coffee husks</strong> are used to produce biofuel instead of being thrown away. Coffee pulp is used as organic fertilizer, returning nutrients to the soil. New technologies also allow wastewater from coffee processing to be cleaned and reused.
         </p>
 
-        <QuoteText author="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance" className="bg-[#f4ece1] border-[#8c6d46]">
+        <QuoteText author="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance" className="bg-[#fdfbf7] border-[#8c6d46]">
           “Waste is no longer waste — it’s a valuable resource. After decades of cooperation between farmers, scientists, governments and companies, we are finally seeing the results.”
         </QuoteText>
 
@@ -120,7 +120,7 @@ export function ArticleWaste() {
 
         {/* Editorial Photo of Dr. Nimimo Maolg */}
         <figure className="mt-6 pt-4 border-t border-[#2c1d11]/20 space-y-2">
-          <div className="border border-[#2c1d11] bg-[#f4ece1] p-1 shadow-[3px_3px_0px_#2c1d11]">
+          <div className="border border-[#2c1d11] bg-[#fdfbf7] p-1 shadow-[2px_2px_0px_#2c1d11]">
             <img
               src="/dr_nimimo_maolg.jpg"
               alt="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance"
