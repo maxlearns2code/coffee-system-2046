@@ -18,7 +18,7 @@ export function ArticleMain() {
           Twenty years ago, coffee trees were failing faster than new ones could grow, as a new tree takes 3-4 years just to bear fruit. Without a fix, coffee was headed toward becoming a luxury.
         </p>
 
-        <p className="font-bold text-[#1c1917] text-lg">
+        <p className="font-semibold text-[#1c1917]">
           So we built a backup.
         </p>
 
