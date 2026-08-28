@@ -67,21 +67,24 @@ interface BannerProps {
 
 export function FeedbackBanner({}: BannerProps) {
   return (
-    <div className="mb-8 p-4 bg-[#fef9c3] border-2 border-[#ca8a04] shadow-[4px_4px_0px_#ca8a04] rounded-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div className="flex items-center gap-4">
-        <div className="w-16 h-16 bg-white p-1 border border-[#ca8a04] rounded-sm shrink-0 shadow-sm">
+    <div className="mb-10 p-6 md:p-8 bg-[#fef08a] border-4 border-[#ca8a04] shadow-[6px_6px_0px_#854d0e] rounded-md flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+        <div className="w-28 h-28 sm:w-32 sm:h-32 bg-white p-2 border-2 border-[#ca8a04] rounded-md shrink-0 shadow-md transform hover:scale-105 transition-transform">
           <img
             src="/qrcode.jpg"
             alt="The Backup Bean Presentation QR Code"
             className="w-full h-full object-contain"
           />
         </div>
-        <div>
-          <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#a16207] block mb-0.5">
-            📌 Complete The Feedback Loop
+        <div className="space-y-2">
+          <span className="inline-block bg-[#854d0e] text-[#fef9c3] text-xs md:text-sm font-mono font-bold uppercase tracking-widest px-3 py-1 rounded-xs">
+            📌 STICK YOUR POST-IT TO OUR PRESENTATION
           </span>
-          <p className="text-sm font-serif font-bold text-[#713f12] leading-snug">
-            Read our 2046 vision, write your response on a Post-it, and stick it on our presentation board!
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-black text-[#713f12] leading-tight">
+            Read Our Vision — Then Leave Us a Post-It Note!
+          </h3>
+          <p className="text-sm md:text-base font-sans font-semibold text-[#854d0e] leading-relaxed max-w-2xl">
+            After reading our 2046 vision, grab a physical Post-it note, write your feedback or thoughts, and stick it directly onto our presentation board to complete the circular harvest!
           </p>
         </div>
       </div>
