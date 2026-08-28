@@ -54,14 +54,14 @@ export function ArticleMain() {
 
         {/* Editorial Diagram of The Backup Bean System */}
         <figure className="mt-6 pt-4 border-t border-[#1c1917]/20 space-y-2">
-          <div className="border border-[#1c1917] bg-[#ede4ce] p-1 shadow-[3px_3px_0px_#1c1917] overflow-hidden rounded-xs max-h-[380px] flex items-center justify-center">
+          <div className="border border-[#1c1917] bg-[#fdfbf7] p-4 shadow-[3px_3px_0px_#1c1917] overflow-hidden rounded-xs flex items-center justify-center">
             <img
-              src="/backup_bean_diagram.jpg"
+              src="/backup_bean_clean.png"
               alt="The Backup Bean cellular coffee production system diagram"
-              className="w-full h-full object-cover object-top filter grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+              className="w-full max-w-sm h-auto object-contain filter grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
             />
           </div>
-          <figcaption className="text-xs font-mono text-[#524436]">
+          <figcaption className="text-xs font-mono text-[#524436] text-center">
             <strong>FIG 1.1:</strong> Technical schematic of The Backup Bean high-speed cellular coffee cultivation tanks.
           </figcaption>
         </figure>
