@@ -368,15 +368,20 @@ export default function Home() {
           <div className="space-y-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="w-full md:w-2/3">
-                <label className="text-xs font-mono font-bold uppercase text-[#2c2416] block mb-2">
+                <label htmlFor="equity-slider" className="text-xs font-mono font-bold uppercase text-[#2c2416] block mb-2">
                   Adjust Equity Share Floor: <span className="text-base font-mono text-[#8c6d46]">{sliderValue}%</span>
                 </label>
                 <input
+                  id="equity-slider"
                   type="range"
                   min="3"
                   max="50"
                   value={sliderValue}
                   onChange={(e) => setSliderValue(Number(e.target.value))}
+                  aria-label="Producer Equity Share Percentage"
+                  aria-valuemin={3}
+                  aria-valuemax={50}
+                  aria-valuenow={sliderValue}
                   className="w-full accent-[#8c6d46] cursor-pointer h-2 bg-[#e3d7bf] rounded-lg"
                 />
                 <div className="flex justify-between text-[11px] font-mono text-[#6e5d4f] mt-1">
