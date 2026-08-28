@@ -80,9 +80,9 @@ export function FeedbackBanner({}: BannerProps) {
           <span className="inline-block bg-[#2c1d11] text-[#f4ece1] text-xs md:text-sm font-mono font-bold uppercase tracking-widest px-3 py-1 rounded-xs">
             📌 COMPLETE THE FEEDBACK LOOP
           </span>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-serif font-black text-[#1c1917] leading-tight">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-black text-[#1c1917] leading-tight">
             How to participate:
-          </h2>
+          </h3>
           <ol className="space-y-1.5 text-sm md:text-base font-sans font-semibold text-[#3d2b1f] text-left">
             <li className="flex items-center gap-2.5">
               <span className="w-6 h-6 bg-[#8c6d46] text-white rounded-full text-xs flex items-center justify-center font-mono font-bold shrink-0">1</span>
