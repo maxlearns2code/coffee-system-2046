@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -29,6 +30,7 @@ export default function RootLayout({
     >
       <body className="bg-[#f4ece1] text-[#1c1917] min-h-screen font-sans selection:bg-[#8c6d46] selection:text-white">
         {children}
+        <Analytics />
       </body>
     </html>
   );
