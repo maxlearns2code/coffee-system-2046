@@ -28,9 +28,9 @@ export function Masthead({
         {title}
       </h1>
 
-      <p role="doc-subtitle" className="font-serif italic text-base sm:text-lg text-[#3d3326] max-w-2xl mx-auto">
+      <h2 className="font-serif italic text-base sm:text-lg font-normal text-[#3d3326] max-w-2xl mx-auto">
         {subtitle}
-      </p>
+      </h2>
     </header>
   );
 }
