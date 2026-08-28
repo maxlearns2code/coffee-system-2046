@@ -12,7 +12,7 @@ interface MastheadProps {
 export function Masthead({
   volume = "Vol. XLVI, No. 182",
   journalName = "THE BACKUP BEAN • VISION 2046",
-  date = "October 24, 2046",
+  date = "August 24, 2046",
   title,
   subtitle,
 }: MastheadProps) {
