@@ -1,6 +1,6 @@
 # The Backup Bean (The Coffee System 2046) ☕🌱
 
-> **Vision Landing Page & Interactive Governance Simulator** for **The Backup Bean** — a circular harvest system for 2046. Designed to complete the physical presentation feedback loop: scan the QR code on our printable poster, explore the 2046 vision, take the quiz, and attach your Post-it note response to the presentation board.
+> **Vision Landing Page & Editorial Newspaper** for **The Backup Bean** — a circular harvest vision for 2046. Designed to complete the physical presentation feedback loop: scan the QR code on our printable poster, explore the 2046 vision, and attach your physical Post-it note to the presentation board.
 
 Live Target Domain: [https://coffee-system-2046.vercel.app](https://coffee-system-2046.vercel.app)  
 GitHub Repository: [https://github.com/maxlearns2code/coffee-system-2046.git](https://github.com/maxlearns2code/coffee-system-2046.git)
@@ -9,45 +9,72 @@ GitHub Repository: [https://github.com/maxlearns2code/coffee-system-2046.git](ht
 
 ## 🔄 The Presentation Feedback Loop
 
-1. **Scan Printable Presentation QR Code**: Viewers scan the physical QR code on **The Backup Bean** poster.
-2. **Explore 2046 Vision**: Read the lead articles, compare 2026 failure modes vs. 2046 solutions across 6 system nodes, and adjust the value-distribution slider.
-3. **Take the Governance Quiz**: Answer 3 strategic choices balancing *Farmer Equity*, *Ecosystem Health*, and *Market Stability*.
-4. **Attach Post-it Note**: Write your score and vision result onto a physical Post-it note and stick it onto the printable presentation board to complete the feedback loop!
+1. **Scan Printable Presentation QR Code**: Viewers scan the enlarged QR code embedded in **The Backup Bean** header banner.
+2. **Read the 2046 Retrospective Vision**: Explore our 20-year retrospective report (*"The Backup Bean: What We Achieved"*) and circularity feature (*"Waste Is No Longer Waste, It's a Valuable Resource"*).
+3. **Follow the 3-Step Header Guide**:
+   - **Step 1**: Read the 2046 vision.
+   - **Step 2**: Write thoughts on a physical Post-it note.
+   - **Step 3**: Stick the Post-it onto the physical presentation board.
+4. **Editorial & Redaction Team**: View and connect with our editorial board via direct LinkedIn credentials in the footer.
 
 ---
 
-## 📜 Project Overview & Problem Baselines
+## 📜 Key Editorial Articles & Vision Highlights
 
-### 2026 Problem Baseline (The Broken Linear Chain)
-- **C-Price Financial Speculation**: Wall Street futures exchanges dictate coffee bean values, stripping producers of equity and leaving smallholders with only **~3% of retail cup value**.
-- **Monoculture & Soil Degradation**: Chemical-intensive sun monoculture causes **68% soil biodiversity loss** and leaves harvests vulnerable to climate shocks.
-- **Ecological Acidification**: Millions of tons of wet mill effluent and municipal spent grounds dumped into waterways and landfills, generating severe methane emissions.
+### 1. Special Retrospective Report (2026–2046)
+- **Title**: *The Backup Bean: What We Achieved*
+- **Core Narrative**: Looking back from 2046 on how high-speed cellular coffee cultivation in tanks prevented coffee from becoming an expensive luxury during climate shocks.
+- **Key Achievements**:
+  - **Emergency Reserve**: Rapidly filled harvest gap during severe droughts/frosts.
+  - **Price Ceiling**: Prevented panic pricing spikes by maintaining a reliable backup.
+  - **Transition Buffer**: Provided smallholder farmers time to adapt heat-resistant crops without crisis pricing.
 
-### 2046 Preferred Future (The Circular Harvest)
-- **Direct-Value Protocol**: Abolished C-Price speculation with decentralized smart contracts locking in a **42% producer equity floor**.
-- **Polyculture Agroforestry**: Multi-strata native shade tree canopy restoring soil carbon (+140%) and micro-climate buffering.
-- **Closed-Loop Bio-Refining**: 100% upcycled coffee cherries (cascara elixirs, organic fertilizers, bioplastics) closing all nutrient loops.
+### 2. "Why It Matters" Core Callout
+- *Humanity has always lived with limited resources. The future depends on how carefully we consume them, and on our ability to develop circular economy technologies that turn waste back into value.*
 
----
-
-## 🛠️ Tech Stack & Architecture
-
-- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Animations**: Framer Motion
-- **Print Optimization**: `@media print` rules tailored for A4/A3 single-page editorial newspaper layout (`-webkit-print-color-adjust: exact`).
+### 3. Sustainability & Circularity (August 2046)
+- **Title**: *“Waste Is No Longer Waste, It’s a Valuable Resource”*
+- **Core Narrative**: Featuring insights from Dr. Nimimo Maolg on achieving zero-waste standards in global coffee processing. Over 70% of coffee husks are converted into biofuel, pulp into organic fertilizer, and wastewater recycled.
 
 ---
 
-## 🎮 Interactive Features Guide
+## 🎨 Unified Design System & Atomic Architecture
 
-1. **Temporal Lens Toggle**: Seamlessly switch between the **2026 Broken Linear Chain** and the **2046 Closed-Loop System**.
-2. **6-Stage Interactive Loop**: Click through system nodes (*Living Soil/Canopy*, *Hand-Harvest*, *Direct-Value Protocol*, *Eco-Logistics*, *Roaster/Consumer*, *Bio-Refining*) to view side-by-side comparative data.
-3. **Value-Distribution Slider**: Interactively shift producer revenue share from the 2026 baseline (~3%) up to 42% and observe dynamic cup payout calculations.
-4. **Coffee Governance Game / Simulator**: A 3-question interactive scenario test evaluating decisions across **Farmer Equity**, **Ecosystem Health**, and **Market Stability**.
-5. **Print-Ready Editorial Layout**: Click **Print Newspaper** to export or render a physical newspaper front page with screen-only controls cleanly hidden (`.no-print`).
+The application is structured strictly using **Atomic Design Principles**:
+
+- **Atoms (`src/components/atoms/Atoms.tsx`)**:
+  - `Badge`: Section indicator tags styled in unified dark espresso (`#2c1d11`).
+  - `QuoteText`: Blockquotes with warm parchment backgrounds (`#fdfbf7`) and coffee tan borders (`#8c6d46`).
+- **Molecules (`src/components/molecules/Molecules.tsx`)**:
+  - `Masthead`: Double-bordered retro press masthead featuring issue volume, date (*August 24, 2046*), and semantic heading hierarchy (`H1` + `H2`).
+  - `FeedbackBanner`: High-visibility callout box featuring the uploaded presentation QR code and a 3-step participation guide.
+  - `AccomplishmentsBox`: Structured achievements list with dark espresso bullet points.
+- **Organisms (`src/components/organisms/Organisms.tsx`)**:
+  - `ArticleMain`: Retrospective report with tight-framed technical schematic (`/backup_bean_clean.webp`).
+  - `SectionWhyItMatters`: Lightened callout card with dark espresso borders.
+  - `ArticleWaste`: Circularity report featuring Dr. Nimimo Maolg's portrait (`/dr_nimimo.webp`).
+  - `NewspaperFooter`: Publication metadata and a responsive 3-column grid of Editorial & Redaction Team LinkedIn links.
+- **Templates (`src/components/templates/NewspaperTemplate.tsx`)**:
+  - Page wrapper combining all components into a cohesive, responsive newspaper page.
+
+---
+
+## ⚡ Performance, Analytics & Accessibility Standards
+
+- **Vercel Analytics**: Fully integrated `@vercel/analytics` in `RootLayout` (`src/app/layout.tsx`) for real-time traffic and performance monitoring.
+- **Modern Build Baseline**: Optimized `next.config.ts` for SWC ES2022+ output to eliminate legacy polyfills (e.g. `Array.prototype.at`, `Object.hasOwn`).
+- **WebP Image Compression**: All visual assets optimized to lightweight WebP formats (`backup_bean_clean.webp`, `dr_nimimo.webp`).
+- **WAVE & HTML5 Accessibility**: Strict `H1` -> `H2` -> `H3` heading flow, semantic landmarks (`<header>`, `<main>`, `<article>`, `<figure>`, `<footer>`), and accessible WCAG contrast ratios.
+
+---
+
+## 👥 Editorial & Redaction Team
+
+- **Karenina Cojulun**: [LinkedIn Profile](https://www.linkedin.com/in/kareninacojulun/)
+- **Memoona Wahid**: [LinkedIn Profile](https://www.linkedin.com/in/memoona-wahid/)
+- **Olga Kotova**: [LinkedIn Profile](https://www.linkedin.com/in/ohkotova)
+- **Maxime Dewynter**: [LinkedIn Profile](https://www.linkedin.com/in/maxime-dewynter/)
+- **Miki S.**: [LinkedIn Profile](https://www.linkedin.com/in/miki-s-950841150/)
 
 ---
 
@@ -59,16 +86,7 @@ GitHub Repository: [https://github.com/maxlearns2code/coffee-system-2046.git](ht
    ```
 
 2. **Deploy to Vercel**:
-   - Log into your [Vercel Dashboard](https://vercel.com).
-   - Click **Add New > Project** and import `maxlearns2code/coffee-system-2046`.
+   - Log into [Vercel Dashboard](https://vercel.com).
+   - Import `maxlearns2code/coffee-system-2046`.
    - Keep default Next.js build settings (`npm run build`).
-   - Assign custom domain `coffee-system-2046.vercel.app` in project settings.
-
----
-
-## ✒️ Step-by-Step Commit History
-
-- **Step 1**: Initialized Next.js project with App Router, TypeScript, Tailwind CSS, `lucide-react`, and `framer-motion`.
-- **Step 2**: Configured `@media print` rules, `-webkit-print-color-adjust: exact`, `.no-print` hiding, and single-page A4 scaling in `src/app/globals.css`.
-- **Step 3 & 4**: Built interactive core (Time Toggle, 6 System Nodes, Value Slider, Coffee Governance Game) and 2046 front-page newspaper structure.
-- **Step 5**: Created comprehensive documentation in `README.md`.
+   - Assign custom domain `coffee-system-2046.vercel.app`.
