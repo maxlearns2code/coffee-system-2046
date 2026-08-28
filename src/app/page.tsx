@@ -488,7 +488,7 @@ export default function Home() {
 
         {/* FOOTER */}
         <footer className="mt-10 pt-4 border-t-4 border-double border-[#1c1917] text-center text-xs font-mono text-[#524436]">
-          <p>© 2046 The Backup Bean • Vision Presentation & Interactive Feedback Loop • Stick Your Post-it to Complete the Harvest</p>
+          <p>© 2046 The Backup Bean • Independent Coffee Industry Newspaper • Published in Stockholm • Issue No. 08/2046</p>
         </footer>
       </div>
     </main>
