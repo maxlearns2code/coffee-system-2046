@@ -61,22 +61,28 @@ export function AccomplishmentsBox({ title, items }: AccomplishmentsBoxProps) {
 }
 
 interface BannerProps {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
-export function FeedbackBanner({ title, description }: BannerProps) {
+export function FeedbackBanner({}: BannerProps) {
   return (
-    <div className="mb-8 p-4 bg-[#fef9c3] border-2 border-[#ca8a04] shadow-[4px_4px_0px_#ca8a04] rounded-sm flex flex-col md:flex-row items-center justify-between gap-4">
-      <div className="flex items-center gap-3">
-        <div className="w-10 h-10 bg-[#ca8a04] text-white flex items-center justify-center font-black font-mono text-lg rounded-sm shrink-0">
-          QR
+    <div className="mb-8 p-4 bg-[#fef9c3] border-2 border-[#ca8a04] shadow-[4px_4px_0px_#ca8a04] rounded-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="flex items-center gap-4">
+        <div className="w-16 h-16 bg-white p-1 border border-[#ca8a04] rounded-sm shrink-0 shadow-sm">
+          <img
+            src="/qrcode.jpg"
+            alt="The Backup Bean Presentation QR Code"
+            className="w-full h-full object-contain"
+          />
         </div>
         <div>
-          <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#a16207]">
-            {title}
+          <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#a16207] block mb-0.5">
+            📌 Complete The Feedback Loop
           </span>
-          <p className="text-xs text-[#713f12]">{description}</p>
+          <p className="text-sm font-serif font-bold text-[#713f12] leading-snug">
+            Take the quiz below, write your answer on a Post-it, and stick it on our presentation board!
+          </p>
         </div>
       </div>
     </div>
