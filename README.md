@@ -1,9 +1,18 @@
-# The Coffee System 2046: The Circular Harvest ☕🌱
+# The Backup Bean (The Coffee System 2046) ☕🌱
 
-> **Front Page Newspaper of 2046** — An interactive editorial experience depicting the preferred future of global coffee systems, agroforestry governance, and closed-loop economic protocols.
+> **Vision Landing Page & Interactive Governance Simulator** for **The Backup Bean** — a circular harvest system for 2046. Designed to complete the physical presentation feedback loop: scan the QR code on our printable poster, explore the 2046 vision, take the quiz, and attach your Post-it note response to the presentation board.
 
 Live Target Domain: [https://coffee-system-2046.vercel.app](https://coffee-system-2046.vercel.app)  
 GitHub Repository: [https://github.com/maxlearns2code/coffee-system-2046.git](https://github.com/maxlearns2code/coffee-system-2046.git)
+
+---
+
+## 🔄 The Presentation Feedback Loop
+
+1. **Scan Printable Presentation QR Code**: Viewers scan the physical QR code on **The Backup Bean** poster.
+2. **Explore 2046 Vision**: Read the lead articles, compare 2026 failure modes vs. 2046 solutions across 6 system nodes, and adjust the value-distribution slider.
+3. **Take the Governance Quiz**: Answer 3 strategic choices balancing *Farmer Equity*, *Ecosystem Health*, and *Market Stability*.
+4. **Attach Post-it Note**: Write your score and vision result onto a physical Post-it note and stick it onto the printable presentation board to complete the feedback loop!
 
 ---
 

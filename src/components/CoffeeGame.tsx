@@ -258,6 +258,19 @@ export default function CoffeeGame() {
               </div>
             </div>
 
+            {/* Interactive Post-it Sticky Note Loop Instruction Box */}
+            <div className="p-5 bg-[#fef9c3] border-2 border-[#ca8a04] shadow-[4px_4px_0px_#ca8a04] rounded-sm text-[#713f12]">
+              <div className="flex items-center gap-2 mb-2 font-mono font-bold text-xs uppercase tracking-wider text-[#a16207]">
+                📌 Complete the Interactive Presentation Loop!
+              </div>
+              <h5 className="font-serif text-lg font-bold text-[#854d0e] mb-1">
+                Write Your Quiz Score & Vision on a Post-it Note
+              </h5>
+              <p className="text-xs text-[#713f12] leading-relaxed">
+                Take a physical Post-it note, write down your result (<strong>{isHighResult ? "2046 Visionary" : "2026 Trap"}</strong> - Scores: Equity {Math.min(100, Math.max(0, totalScores.equity))}%, Ecosystem {Math.min(100, Math.max(0, totalScores.ecosystem))}%, Market {Math.min(100, Math.max(0, totalScores.market))}%), and stick it onto our printable QR-code presentation board to complete the feedback loop!
+              </p>
+            </div>
+
             <button
               onClick={handleReset}
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2c2416] text-[#f9f6f0] font-mono text-xs uppercase tracking-widest hover:bg-[#8c6d46] transition-colors rounded-sm shadow-[2px_2px_0px_#1c1917]"

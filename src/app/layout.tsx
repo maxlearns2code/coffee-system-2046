@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Coffee System 2046 • The Circular Harvest",
-  description: "Front page newspaper of 2046: C-Price speculation abolished, Direct-Value protocol reaches 94% smallholder adoption, and closed-loop coffee eco-systems.",
+  title: "The Backup Bean • The Coffee System 2046",
+  description: "Vision & Interactive Governance Simulator for The Backup Bean: A circular harvest system for 2046.",
 };
 
 export default function RootLayout({

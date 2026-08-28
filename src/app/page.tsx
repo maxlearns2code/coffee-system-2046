@@ -150,76 +150,68 @@ export default function Home() {
   const [selectedNode, setSelectedNode] = useState<SystemNode>(SYSTEM_NODES[0]);
   const [sliderValue, setSliderValue] = useState<number>(42); // 42% default for 2046
 
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
-    <main className="newspaper-container max-w-6xl mx-auto px-4 py-6 md:py-10">
-      {/* Top Controls Header (Hidden on Print) */}
-      <div className="no-print mb-8 p-4 bg-[#ede4ce] border border-[#2c2416]/30 flex flex-col md:flex-row items-center justify-between gap-4 rounded-sm">
+    <main className="max-w-6xl mx-auto px-4 py-6 md:py-10">
+      {/* Interactive QR-Code & Post-It Feedback Banner */}
+      <div className="mb-8 p-4 bg-[#fef9c3] border-2 border-[#ca8a04] shadow-[4px_4px_0px_#ca8a04] rounded-sm flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          <Globe className="w-5 h-5 text-[#8c6d46]" />
+          <div className="w-10 h-10 bg-[#ca8a04] text-white flex items-center justify-center font-black font-mono text-lg rounded-sm shrink-0">
+            QR
+          </div>
           <div>
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#2c2416]">
-              System Lens Toggle
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#a16207]">
+              Interactive Presentation Feedback Loop
             </span>
-            <p className="text-xs text-[#524436]">
-              Switch temporal perspective between 2026 baseline and 2046 preferred future.
+            <p className="text-xs text-[#713f12]">
+              Scanned our printable QR code? Explore our 2046 vision, take the quiz below, and stick your Post-it answer onto our physical presentation board!
             </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
-          <div className="inline-flex bg-[#fcf9f2] p-1 border border-[#2c2416] rounded-sm">
+        <div className="flex items-center gap-3 shrink-0">
+          <span className="text-xs font-mono font-bold uppercase text-[#713f12]">Temporal Lens:</span>
+          <div className="inline-flex bg-[#fcf9f2] p-1 border border-[#ca8a04] rounded-sm">
             <button
               onClick={() => setSystemYear("2026")}
-              className={`px-4 py-1.5 font-mono text-xs font-bold transition-colors ${
+              className={`px-3 py-1 font-mono text-xs font-bold transition-colors ${
                 systemYear === "2026"
                   ? "bg-[#9e2a2b] text-white shadow-sm"
                   : "text-[#2c2416] hover:bg-[#e3d7bf]"
               }`}
             >
-              2026 Linear Chain
+              2026 Linear
             </button>
             <button
               onClick={() => setSystemYear("2046")}
-              className={`px-4 py-1.5 font-mono text-xs font-bold transition-colors ${
+              className={`px-3 py-1 font-mono text-xs font-bold transition-colors ${
                 systemYear === "2046"
                   ? "bg-[#2e6930] text-white shadow-sm"
                   : "text-[#2c2416] hover:bg-[#e3d7bf]"
               }`}
             >
-              2046 Circular Loop
+              2046 Circular
             </button>
           </div>
-
-          <button
-            onClick={handlePrint}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-[#2c2416] text-[#f9f6f0] text-xs font-mono font-bold uppercase hover:bg-[#8c6d46] transition-colors rounded-sm shadow-[2px_2px_0px_#1c1917]"
-          >
-            <Printer className="w-4 h-4" /> Print Newspaper
-          </button>
         </div>
       </div>
 
-      {/* NEWSPAPER FRONT PAGE CONTAINER */}
-      <div className="bg-[#f9f6f0] p-6 md:p-10 border-2 border-[#1c1917] print:border-none print:p-0">
+      {/* VISION LANDING PAGE CONTAINER */}
+      <div className="bg-[#f9f6f0] p-6 md:p-10 border-2 border-[#1c1917] shadow-[6px_6px_0px_#1c1917]">
         
         {/* MASTHEAD & HEADER */}
         <header className="border-b-4 border-double border-[#1c1917] pb-4 mb-6 text-center">
           <div className="flex justify-between items-center text-xs font-mono uppercase tracking-widest text-[#524436] border-b border-[#1c1917]/30 pb-2 mb-4">
             <span>Vol. XLVI, No. 182</span>
-            <span className="font-bold text-[#1c1917]">THE COFFEE SYSTEM 2046</span>
-            <span>October 24, 2046 • \$3.50 Bio-Credits</span>
+            <span className="font-bold text-[#1c1917]">THE BACKUP BEAN • VISION 2046</span>
+            <span>October 24, 2046</span>
           </div>
 
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-[#1c1917] leading-none mb-3">
-            The Circular Harvest
+            The Backup Bean
           </h1>
           
           <p className="font-serif italic text-base sm:text-lg text-[#3d3326] max-w-3xl mx-auto">
-            The International Journal of Agroforestry Governance & Closed-Loop Commodities
+            The Circular Harvest & Closed-Loop Coffee Ecosystem for 2046
           </p>
         </header>
 
@@ -450,7 +442,7 @@ export default function Home() {
 
         {/* FOOTER */}
         <footer className="mt-10 pt-4 border-t-4 border-double border-[#1c1917] text-center text-xs font-mono text-[#524436]">
-          <p>© 2046 The Coffee System • Published by The Circular Harvest Alliance • Printed on 100% Upcycled Agricultural Fiber</p>
+          <p>© 2046 The Backup Bean • Vision Presentation & Interactive Feedback Loop • Stick Your Post-it to Complete the Harvest</p>
         </footer>
       </div>
     </main>
