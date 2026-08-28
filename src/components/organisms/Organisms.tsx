@@ -137,9 +137,40 @@ export function ArticleWaste() {
 }
 
 export function NewspaperFooter() {
+  const teamMembers = [
+    { name: "Karenina Cojulun", url: "https://www.linkedin.com/in/kareninacojulun/" },
+    { name: "Memoona Wahid", url: "https://www.linkedin.com/in/memoona-wahid/" },
+    { name: "Olga Kotova", url: "https://www.linkedin.com/in/ohkotova" },
+    { name: "Maxime Dewynter", url: "https://www.linkedin.com/in/maxime-dewynter/" },
+    { name: "Miki S.", url: "https://www.linkedin.com/in/miki-s-950841150/" },
+  ];
+
   return (
-    <footer className="mt-10 pt-4 border-t-4 border-double border-[#1c1917] text-center text-xs font-mono text-[#524436]">
-      <p>© 2046 The Backup Bean • Independent Coffee Industry Newspaper • Published in Stockholm • Issue No. 08/2046</p>
+    <footer className="mt-12 pt-6 border-t-4 border-double border-[#2c1d11] text-center font-sans space-y-6">
+      {/* Redaction Team Members Section */}
+      <div className="p-5 bg-[#f4ece1] border-2 border-[#2c1d11] rounded-md shadow-[3px_3px_0px_#2c1d11]">
+        <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8c6d46] block mb-3">
+          EDITORIAL & REDACTION TEAM
+        </span>
+        <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-xs font-mono font-bold">
+          {teamMembers.map((member, idx) => (
+            <a
+              key={idx}
+              href={member.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#fdfbf7] border border-[#2c1d11] text-[#2c1d11] hover:bg-[#2c1d11] hover:text-[#fdfbf7] transition-all rounded-xs shadow-[2px_2px_0px_#2c1d11]"
+            >
+              <span>{member.name}</span>
+              <span className="text-[10px] text-[#8c6d46] font-normal">↗</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div className="text-xs font-mono text-[#524436]">
+        <p>© 2046 The Backup Bean • Independent Coffee Industry Newspaper • Published in Stockholm • Issue No. 08/2046</p>
+      </div>
     </footer>
   );
 }
