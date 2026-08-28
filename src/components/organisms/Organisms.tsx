@@ -149,9 +149,9 @@ export function NewspaperFooter() {
     <footer className="mt-12 pt-6 border-t-4 border-double border-[#2c1d11] text-center font-sans space-y-6">
       {/* Redaction Team Members Section */}
       <div className="p-5 md:p-6 bg-[#f4ece1] border-2 border-[#2c1d11] rounded-md shadow-[3px_3px_0px_#2c1d11]">
-        <span className="text-xs font-mono font-black uppercase tracking-widest text-[#2c1d11] block mb-4">
+        <h3 className="text-xs font-mono font-black uppercase tracking-widest text-[#2c1d11] block mb-4">
           EDITORIAL & REDACTION TEAM
-        </span>
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 max-w-2xl mx-auto text-xs font-mono font-bold">
           {teamMembers.map((member, idx) => (
             <a

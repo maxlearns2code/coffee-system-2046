@@ -67,7 +67,7 @@ interface BannerProps {
 
 export function FeedbackBanner({}: BannerProps) {
   return (
-    <div className="mb-10 p-6 md:p-8 bg-[#f4ece1] border-2 border-[#2c1d11] shadow-[6px_6px_0px_#2c1d11] rounded-md flex flex-col md:flex-row items-center justify-between gap-6">
+    <section aria-label="Feedback Instructions" className="mb-10 p-6 md:p-8 bg-[#f4ece1] border-2 border-[#2c1d11] shadow-[6px_6px_0px_#2c1d11] rounded-md flex flex-col md:flex-row items-center justify-between gap-6">
       <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
         <div className="w-28 h-28 sm:w-32 sm:h-32 bg-white p-2 border-2 border-[#2c1d11] rounded-md shrink-0 shadow-md transform hover:scale-105 transition-transform">
           <img
@@ -80,10 +80,10 @@ export function FeedbackBanner({}: BannerProps) {
           <span className="inline-block bg-[#2c1d11] text-[#f4ece1] text-xs md:text-sm font-mono font-bold uppercase tracking-widest px-3 py-1 rounded-xs">
             📌 COMPLETE THE FEEDBACK LOOP
           </span>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-black text-[#1c1917] leading-tight">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-serif font-black text-[#1c1917] leading-tight">
             How to participate:
-          </h3>
-          <ul className="space-y-1.5 text-sm md:text-base font-sans font-semibold text-[#3d2b1f] text-left">
+          </h2>
+          <ol className="space-y-1.5 text-sm md:text-base font-sans font-semibold text-[#3d2b1f] text-left">
             <li className="flex items-center gap-2.5">
               <span className="w-6 h-6 bg-[#8c6d46] text-white rounded-full text-xs flex items-center justify-center font-mono font-bold shrink-0">1</span>
               <span><strong>Read</strong> our 2046 vision below</span>
@@ -96,9 +96,9 @@ export function FeedbackBanner({}: BannerProps) {
               <span className="w-6 h-6 bg-[#8c6d46] text-white rounded-full text-xs flex items-center justify-center font-mono font-bold shrink-0">3</span>
               <span><strong>Stick</strong> your Post-it on our presentation board!</span>
             </li>
-          </ul>
+          </ol>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
