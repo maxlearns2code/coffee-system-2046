@@ -72,7 +72,7 @@ export function ArticleMain() {
 
 export function SectionWhyItMatters() {
   return (
-    <section className="my-8 p-6 bg-[#f2ebd9] border-2 border-[#1c1917] rounded-sm">
+    <section className="my-8 p-6 bg-[#f4ece1] border-2 border-[#2c1d11] rounded-sm shadow-[3px_3px_0px_#2c1d11]">
       <div className="flex items-center gap-2 mb-2">
         <span className="w-2.5 h-2.5 bg-[#8c6d46] rounded-full"></span>
         <h3 className="font-serif text-xl sm:text-2xl font-black uppercase text-[#1c1917] tracking-wide">
