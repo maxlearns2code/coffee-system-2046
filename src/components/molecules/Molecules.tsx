@@ -42,14 +42,14 @@ interface AccomplishmentsBoxProps {
 
 export function AccomplishmentsBox({ title, items }: AccomplishmentsBoxProps) {
   return (
-    <div className="p-5 bg-[#f2ebd9] border-l-4 border-[#1c1917] my-4 font-sans text-sm space-y-3 rounded-r-sm">
-      <span className="font-mono font-bold uppercase tracking-wider text-[#1c1917] block text-xs">
+    <div className="p-5 bg-[#fdfbf7] border-l-4 border-[#2c1d11] border border-[#2c1d11]/20 my-4 font-sans text-sm space-y-3 rounded-r-sm shadow-[2px_2px_0px_#2c1d11]">
+      <span className="font-mono font-bold uppercase tracking-wider text-[#2c1d11] block text-xs">
         {title}
       </span>
       <ul className="space-y-2 text-[#3d3326]">
         {items.map((item, idx) => (
-          <li key={idx} className="flex items-start gap-2">
-            <span className="text-[#8c6d46] font-bold">•</span>
+          <li key={idx} className="flex items-start gap-2.5">
+            <span className="text-[#2c1d11] font-black text-base leading-none select-none">•</span>
             <span>
               <strong>{item.key}:</strong> {item.description}
             </span>

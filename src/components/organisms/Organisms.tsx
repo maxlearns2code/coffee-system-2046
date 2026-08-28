@@ -72,9 +72,9 @@ export function ArticleMain() {
 
 export function SectionWhyItMatters() {
   return (
-    <section className="my-10 p-6 md:p-8 bg-[#fdfbf7] border-l-4 border-[#8c6d46] border border-[#2c1d11]/20 rounded-r-md shadow-[3px_3px_0px_#2c1d11]">
+    <section className="my-10 p-6 md:p-8 bg-[#fdfbf7] border-l-4 border-[#2c1d11] border border-[#2c1d11]/20 rounded-r-md shadow-[3px_3px_0px_#2c1d11]">
       <div className="flex items-center gap-2.5 mb-3">
-        <span className="w-3 h-3 bg-[#8c6d46] rounded-full"></span>
+        <span className="w-3 h-3 bg-[#2c1d11] rounded-full"></span>
         <h3 className="font-serif text-xl sm:text-2xl font-black uppercase text-[#1c1917] tracking-wide">
           Why It Matters
         </h3>
