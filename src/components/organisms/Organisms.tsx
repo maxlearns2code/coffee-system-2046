@@ -4,7 +4,7 @@ import { AccomplishmentsBox } from "../molecules/Molecules";
 
 export function ArticleMain() {
   return (
-    <article className="mb-10 p-6 md:p-8 bg-[#f4ece1] border-2 border-[#2c1d11] shadow-[4px_4px_0px_#2c1d11] rounded-md">
+    <article className="mb-8 p-6 md:p-8 bg-[#f4ece1] border-2 border-[#2c1d11] shadow-[4px_4px_0px_#2c1d11] rounded-md">
       <Badge variant="dark" className="mb-3">
         SPECIAL RETROSPECTIVE REPORT • 2026–2046
       </Badge>
@@ -13,9 +13,9 @@ export function ArticleMain() {
         The Backup Bean: What We Achieved
       </h2>
 
-      <div className="font-serif text-base md:text-lg text-[#2c2416] leading-relaxed space-y-5">
+      <div className="font-serif text-base md:text-lg text-[#2c2416] leading-relaxed space-y-4">
         <p className="first-letter:text-5xl first-letter:font-black first-letter:float-left first-letter:mr-3 first-letter:leading-none">
-          Twenty years ago, coffee trees were failing faster than new ones could grow — and a new tree takes 3-4 years just to bear fruit. Without a fix, coffee was headed toward becoming a luxury.
+          Twenty years ago, coffee trees were failing faster than new ones could grow, as a new tree takes 3-4 years just to bear fruit. Without a fix, coffee was headed toward becoming a luxury.
         </p>
 
         <p className="font-bold text-[#1c1917] text-lg">
@@ -31,11 +31,11 @@ export function ArticleMain() {
           items={[
             {
               key: "Emergency Reserve",
-              description: "Every time a drought or frost hit a harvest, lab facilities filled the gap fast — before shortages could spark panic pricing."
+              description: "Every time a drought or frost hit a harvest, lab facilities filled the gap fast before shortages could spark panic pricing."
             },
             {
               key: "Price Ceiling",
-              description: "It became a price ceiling — real coffee never spiked out of control, because an affordable backup was always ready."
+              description: "It became a price ceiling: real coffee never spiked out of control, because an affordable backup was always ready."
             },
             {
               key: "Transition Buffer",
@@ -45,7 +45,7 @@ export function ArticleMain() {
         />
 
         <p>
-          Today, farm-grown coffee is a proud premium choice, and lab-grown coffee is the reliable, everyday option. Coffee stayed a daily ritual for everyone — not just the few who could afford it.
+          Today, farm-grown coffee is a proud premium choice, and lab-grown coffee is the reliable, everyday option. Coffee stayed a daily ritual for everyone, not just the few who could afford it.
         </p>
 
         <QuoteText className="bg-[#fdfbf7] border-[#8c6d46]">
@@ -72,7 +72,7 @@ export function ArticleMain() {
 
 export function SectionWhyItMatters() {
   return (
-    <section className="my-10 p-6 md:p-8 bg-[#fdfbf7] border-l-4 border-[#2c1d11] border border-[#2c1d11]/20 rounded-r-md shadow-[3px_3px_0px_#2c1d11]">
+    <section className="my-8 p-6 md:p-8 bg-[#fdfbf7] border-l-4 border-[#2c1d11] border border-[#2c1d11]/20 rounded-r-md shadow-[3px_3px_0px_#2c1d11]">
       <div className="flex items-center gap-2.5 mb-3">
         <span className="w-3 h-3 bg-[#2c1d11] rounded-full"></span>
         <h3 className="font-serif text-xl sm:text-2xl font-black uppercase text-[#1c1917] tracking-wide">
@@ -80,7 +80,7 @@ export function SectionWhyItMatters() {
         </h3>
       </div>
       <p className="font-serif text-base md:text-lg text-[#2c2416] leading-relaxed italic">
-        Humanity has always lived with limited resources. The future depends on how carefully we consume them — and on our ability to develop circular economy technologies that turn waste back into value.
+        Humanity has always lived with limited resources. The future depends on how carefully we consume them, and on our ability to develop circular economy technologies that turn waste back into value.
       </p>
     </section>
   );
@@ -88,16 +88,16 @@ export function SectionWhyItMatters() {
 
 export function ArticleWaste() {
   return (
-    <article className="mb-10 p-6 md:p-8 bg-[#f4ece1] border-2 border-[#2c1d11] shadow-[4px_4px_0px_#2c1d11] rounded-md">
+    <article className="mb-8 p-6 md:p-8 bg-[#f4ece1] border-2 border-[#2c1d11] shadow-[4px_4px_0px_#2c1d11] rounded-md">
       <Badge variant="green" className="mb-3">
         SUSTAINABILITY & CIRCULARITY • AUGUST 2046
       </Badge>
 
       <h2 className="font-serif text-3xl sm:text-4xl font-black leading-tight text-[#1c1917] mb-6">
-        “Waste Is No Longer Waste — It’s a Valuable Resource”
+        “Waste Is No Longer Waste, It’s a Valuable Resource”
       </h2>
 
-      <div className="font-serif text-base md:text-lg text-[#2c2416] leading-relaxed space-y-5">
+      <div className="font-serif text-base md:text-lg text-[#2c2416] leading-relaxed space-y-4">
         <p>
           The global coffee industry is closer than ever to achieving the zero-waste standard. The transformation started more than 40 years ago, and today we can see impressive results.
         </p>
@@ -111,7 +111,7 @@ export function ArticleWaste() {
         </p>
 
         <QuoteText author="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance" className="bg-[#fdfbf7] border-[#8c6d46]">
-          “Waste is no longer waste — it’s a valuable resource. After decades of cooperation between farmers, scientists, governments and companies, we are finally seeing the results.”
+          “Waste is no longer waste, it’s a valuable resource. After decades of cooperation between farmers, scientists, governments and companies, we are finally seeing the results.”
         </QuoteText>
 
         <p className="font-bold italic text-[#1c1917]">
