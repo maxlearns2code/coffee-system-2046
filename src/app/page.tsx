@@ -218,20 +218,38 @@ export default function Home() {
         {/* MAIN HEADLINE & LEAD BANNER */}
         <section className="mb-8 border-b-2 border-[#1c1917] pb-6">
           <div className="inline-block bg-[#1c1917] text-[#f9f6f0] text-xs font-mono uppercase px-2 py-0.5 mb-2 tracking-widest">
-            Front Page Breakthrough
+            Special Retrospective Report • Looking Back From 2046
           </div>
           <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl font-black leading-tight text-[#1c1917] mb-4">
-            C-Price Speculation Abolished: Global Direct-Value Protocol Reaches 94% Smallholder Adoption
+            The Backup Bean: What We Achieved
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
             {/* Lead Narrative Column */}
             <div className="md:col-span-7 font-serif text-base text-[#2c2416] leading-relaxed space-y-4">
               <p className="first-letter:text-5xl first-letter:font-black first-letter:float-left first-letter:mr-3 first-letter:leading-none">
-                SAN JOSÉ, COSTA RICA — In a historic ratification ceremony at the Global Smallholder Assembly, international delegates confirmed that over 94 percent of equatorial coffee farmers have formally transitioned off speculative futures exchanges. The obsolete ICE C-Price mechanism—long responsible for devastating boom-and-bust cycles—has been replaced by the decentralized Direct-Value Protocol.
+                Twenty years ago, coffee trees were failing faster than new ones could grow — and a new tree takes 3-4 years just to bear fruit. Without a fix, coffee was headed toward becoming a luxury. So we built a backup.
               </p>
               <p>
-                Under the new framework, producer communities capture a guaranteed 40%+ minimum equity floor on every brewed cup sold globally. Backed by closed-loop bio-refineries and shade-tree agroforestry systems, the coffee belt has transformed from a depleted extraction zone into a high-margin ecological haven.
+                We learned to grow real coffee plant cells in tanks, skipping soil, weather, and years of waiting. This lab-grown coffee could scale up in weeks, not years.
+              </p>
+
+              <div className="p-4 bg-[#f2ebd9] border-l-4 border-[#1c1917] space-y-2 my-2 font-sans text-xs">
+                <span className="font-mono font-bold uppercase tracking-wider text-[#1c1917] block">
+                  Key System Accomplishments:
+                </span>
+                <ul className="list-disc list-inside space-y-1 text-[#3d3326]">
+                  <td><strong>Emergency Reserve:</strong> Every time a drought or frost hit a harvest, lab facilities filled the gap fast — before shortages could spark panic pricing.</td>
+                  <td><strong>Price Ceiling:</strong> It became a price ceiling — real coffee never spiked out of control, because an affordable backup was always ready.</td>
+                  <td><strong>Transition Buffer:</strong> It bought the industry time to help small farmers relocate and adopt heat-resistant plants, without anyone paying crisis prices in the meantime.</td>
+                </ul>
+              </div>
+
+              <p>
+                Today, farm-grown coffee is a proud premium choice, and lab-grown coffee is the reliable, everyday option. Coffee stayed a daily ritual for everyone — not just the few who could afford it.
+              </p>
+              <p className="font-bold italic text-[#1c1917]">
+                We built the backup before we needed it. That’s what saved the cup.
               </p>
             </div>
 
@@ -239,23 +257,23 @@ export default function Home() {
             <div className="md:col-span-5 space-y-3">
               <div className="relative border border-[#1c1917] bg-[#ede4ce] p-1">
                 <Image
-                  src="/hero_agroforestry.jpg"
-                  alt="2046 Shade-Tree Agroforestry and Bio-Refinery"
+                  src="/backup_bean_bioreactor.jpg"
+                  alt="The Backup Bean: Cultivated Bioreactor and Traditional Beans"
                   width={600}
                   height={338}
                   className="w-full h-auto grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
                   priority
                 />
                 <span className="text-[10px] font-mono text-[#524436] block mt-1 px-1">
-                  FIG 1.1: Polyculture canopy and community bio-refinery in Tarrazú, Costa Rica.
+                  FIG 1.1: Cellular coffee bioreactor facility (left) alongside traditional farm harvest (right).
                 </span>
               </div>
 
               {/* Pull-Quote */}
               <blockquote className="p-4 bg-[#f2ebd9] border-l-4 border-[#8c6d46] italic font-serif text-sm text-[#1c1917]">
-                &ldquo;We no longer trade coffee as a speculative paper commodity. We trade ecological stewardship, community prosperity, and closed-loop vitality.&rdquo;
+                &ldquo;We built the backup before we needed it. That’s what saved the cup. Coffee stayed a daily ritual for everyone — not just the few who could afford it.&rdquo;
                 <footer className="not-italic text-xs font-mono font-bold text-[#8c6d46] mt-2">
-                  — Maria Elena Gutierrez, President of the Agro-Cooperative Alliance
+                  — The Circular Harvest Alliance (Retrospective 2026–2046)
                 </footer>
               </blockquote>
             </div>
