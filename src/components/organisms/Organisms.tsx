@@ -58,7 +58,7 @@ export function ArticleMain() {
             <img
               src="/backup_bean_clean.png"
               alt="The Backup Bean cellular coffee production system diagram"
-              className="w-full max-w-sm h-auto object-contain filter grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+              className="w-full max-w-sm h-auto object-contain transition-all duration-300"
             />
           </div>
           <figcaption className="text-xs font-mono text-[#524436] text-center">
