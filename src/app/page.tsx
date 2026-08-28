@@ -146,9 +146,8 @@ const SYSTEM_NODES: SystemNode[] = [
 ];
 
 export default function Home() {
-  const [systemYear, setSystemYear] = useState<"2026" | "2046">("2046");
   const [selectedNode, setSelectedNode] = useState<SystemNode>(SYSTEM_NODES[0]);
-  const [sliderValue, setSliderValue] = useState<number>(42); // 42% default for 2046
+  const [sliderValue, setSliderValue] = useState<number>(42);
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-6 md:py-10">
@@ -165,32 +164,6 @@ export default function Home() {
             <p className="text-xs text-[#713f12]">
               Scanned our printable QR code? Explore our 2046 vision, take the quiz below, and stick your Post-it answer onto our physical presentation board!
             </p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3 shrink-0">
-          <span className="text-xs font-mono font-bold uppercase text-[#713f12]">Temporal Lens:</span>
-          <div className="inline-flex bg-[#fcf9f2] p-1 border border-[#ca8a04] rounded-sm">
-            <button
-              onClick={() => setSystemYear("2026")}
-              className={`px-3 py-1 font-mono text-xs font-bold transition-colors ${
-                systemYear === "2026"
-                  ? "bg-[#9e2a2b] text-white shadow-sm"
-                  : "text-[#2c2416] hover:bg-[#e3d7bf]"
-              }`}
-            >
-              2026 Linear
-            </button>
-            <button
-              onClick={() => setSystemYear("2046")}
-              className={`px-3 py-1 font-mono text-xs font-bold transition-colors ${
-                systemYear === "2046"
-                  ? "bg-[#2e6930] text-white shadow-sm"
-                  : "text-[#2c2416] hover:bg-[#e3d7bf]"
-              }`}
-            >
-              2046 Circular
-            </button>
           </div>
         </div>
       </div>
@@ -288,7 +261,7 @@ export default function Home() {
                 Interactive System Map
               </span>
               <h3 className="font-serif text-2xl font-bold text-[#1c1917]">
-                The Circular Harvest vs. Broken Linear Chain ({systemYear} Mode)
+                The Circular Harvest vs. Broken Linear Chain (Systemic Comparison)
               </h3>
             </div>
             <div className="flex items-center gap-2 text-xs font-mono">
@@ -323,7 +296,7 @@ export default function Home() {
 
           {/* Selected Node Comparative Data Popover */}
           <motion.div
-            key={selectedNode.id + systemYear}
+            key={selectedNode.id}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
@@ -338,7 +311,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-sans">
               {/* 2026 Failure Mode */}
-              <div className={`p-4 border rounded-sm ${systemYear === "2026" ? "bg-[#faecec] border-[#9e2a2b]" : "bg-[#f5f0e6] border-[#1c1917]/20"}`}>
+              <div className="p-4 border rounded-sm bg-[#faecec] border-[#9e2a2b]">
                 <div className="flex items-center gap-2 text-[#9e2a2b] font-mono font-bold text-xs uppercase mb-2">
                   <AlertCircle className="w-4 h-4" /> 2026 Broken Linear Chain
                 </div>
@@ -354,7 +327,7 @@ export default function Home() {
               </div>
 
               {/* 2046 Solution */}
-              <div className={`p-4 border rounded-sm ${systemYear === "2046" ? "bg-[#eef6ec] border-[#2e6930]" : "bg-[#f5f0e6] border-[#1c1917]/20"}`}>
+              <div className="p-4 border rounded-sm bg-[#eef6ec] border-[#2e6930]">
                 <div className="flex items-center gap-2 text-[#2e6930] font-mono font-bold text-xs uppercase mb-2">
                   <CheckCircle2 className="w-4 h-4" /> 2046 Closed-Loop Solution
                 </div>
