@@ -119,15 +119,15 @@ export function ArticleWaste() {
         </p>
 
         {/* Editorial Photo of Dr. Nimimo Maolg */}
-        <figure className="mt-6 pt-4 border-t border-[#2c1d11]/20 space-y-2">
-          <div className="border border-[#2c1d11] bg-[#fdfbf7] p-1 shadow-[2px_2px_0px_#2c1d11]">
+        <figure className="mt-6 pt-4 border-t border-[#2c1d11]/20 space-y-2 flex flex-col items-center">
+          <div className="border border-[#2c1d11] bg-[#fdfbf7] p-1.5 shadow-[2px_2px_0px_#2c1d11] rounded-xs max-w-xs w-full">
             <img
               src="/dr_nimimo_maolg.jpg"
               alt="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance"
-              className="w-full h-auto object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+              className="w-full h-auto object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300 rounded-xs"
             />
           </div>
-          <figcaption className="text-xs font-mono text-[#524436]">
+          <figcaption className="text-xs font-mono text-[#524436] text-center max-w-sm">
             <strong>FIG 2.1:</strong> Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance, enjoying cellular coffee in her Stockholm research laboratory.
           </figcaption>
         </figure>
