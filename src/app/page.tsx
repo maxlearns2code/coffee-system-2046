@@ -432,6 +432,56 @@ export default function Home() {
         {/* INTERACTIVE QUESTIONNAIRE GAME COMPONENT */}
         <CoffeeGame />
 
+        {/* SECOND ARTICLE: CIRCULARITY & WASTE TRANSFORMATIONS */}
+        <section className="mb-10 p-6 md:p-8 bg-[#f5efe0] border-2 border-[#1c1917] rounded-sm">
+          <div className="flex justify-between items-center text-xs font-mono uppercase tracking-widest text-[#8c6d46] border-b border-[#1c1917]/20 pb-2 mb-4">
+            <span>Circularity Report • August 2046</span>
+            <span className="font-bold text-[#1c1917]">Global Circularity Alliance</span>
+          </div>
+
+          <h3 className="font-serif text-2xl sm:text-4xl font-black text-[#1c1917] mb-4">
+            “Waste Is No Longer Waste — It’s a Valuable Resource”
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            <div className="md:col-span-7 font-serif text-base text-[#2c2416] leading-relaxed space-y-3">
+              <p>
+                The global coffee industry is closer than ever to achieving the zero-waste standard. The transformation started more than 40 years ago, and today we can see impressive results.
+              </p>
+              <p>
+                A major change happened in 2034, when every cup of coffee became traceable back to the farm where it was grown. This transparency helped the industry better control production and reduce waste.
+              </p>
+              <p>
+                Today, more than <strong>70% of coffee husks</strong> are used to produce biofuel instead of being thrown away. Coffee pulp is used as organic fertilizer, returning nutrients to the soil. New technologies also allow wastewater from coffee processing to be cleaned and reused.
+              </p>
+              <blockquote className="my-3 p-4 bg-[#fcf9f2] border-l-4 border-[#2e6930] italic font-serif text-sm text-[#1c1917]">
+                “Waste is no longer waste — it’s a valuable resource. After decades of cooperation between farmers, scientists, governments and companies, we are finally seeing the results.”
+                <footer className="not-italic text-xs font-mono font-bold text-[#2e6930] mt-2">
+                  — Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance
+                </footer>
+              </blockquote>
+              <p className="font-bold italic text-[#1c1917]">
+                The industry is now moving toward a truly circular future.
+              </p>
+            </div>
+
+            <div className="md:col-span-5">
+              <div className="border border-[#1c1917] bg-[#ede4ce] p-1 shadow-[3px_3px_0px_#1c1917]">
+                <Image
+                  src="/circular_biorefinery.jpg"
+                  alt="Coffee Pulp Biorefinery in 2046"
+                  width={600}
+                  height={338}
+                  className="w-full h-auto grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+                />
+                <span className="text-[10px] font-mono text-[#524436] block mt-1 px-1">
+                  FIG 2.1: Regional biorefinery upcycling coffee husks into biofuel and organic fertilizer.
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* WHY IT MATTERS & TRADE-OFFS SECTION */}
         <section className="mt-10 pt-6 border-t-2 border-[#1c1917] grid grid-cols-1 md:grid-cols-2 gap-8 font-serif text-sm">
           <div>
