@@ -87,6 +87,20 @@ export function ArticleWaste() {
         <p className="font-bold italic text-[#1c1917]">
           The industry is now moving toward a truly circular future.
         </p>
+
+        {/* Editorial Photo of Dr. Nimimo Maolg */}
+        <figure className="mt-6 pt-4 border-t border-[#1c1917]/20 space-y-2">
+          <div className="border border-[#1c1917] bg-[#ede4ce] p-1 shadow-[3px_3px_0px_#1c1917]">
+            <img
+              src="/dr_nimimo_maolg.jpg"
+              alt="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance"
+              className="w-full h-auto object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
+          <figcaption className="text-xs font-mono text-[#524436]">
+            <strong>FIG 2.1:</strong> Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance, enjoying cellular coffee in her Stockholm research laboratory.
+          </figcaption>
+        </figure>
       </div>
     </article>
   );
