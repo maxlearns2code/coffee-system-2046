@@ -148,21 +148,21 @@ export function NewspaperFooter() {
   return (
     <footer className="mt-12 pt-6 border-t-4 border-double border-[#2c1d11] text-center font-sans space-y-6">
       {/* Redaction Team Members Section */}
-      <div className="p-5 bg-[#f4ece1] border-2 border-[#2c1d11] rounded-md shadow-[3px_3px_0px_#2c1d11]">
-        <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8c6d46] block mb-3">
+      <div className="p-5 md:p-6 bg-[#f4ece1] border-2 border-[#2c1d11] rounded-md shadow-[3px_3px_0px_#2c1d11]">
+        <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8c6d46] block mb-4">
           EDITORIAL & REDACTION TEAM
         </span>
-        <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-xs font-mono font-bold">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 max-w-2xl mx-auto text-xs font-mono font-bold">
           {teamMembers.map((member, idx) => (
             <a
               key={idx}
               href={member.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#fdfbf7] border border-[#2c1d11] text-[#2c1d11] hover:bg-[#2c1d11] hover:text-[#fdfbf7] transition-all rounded-xs shadow-[2px_2px_0px_#2c1d11]"
+              className="flex items-center justify-between px-3.5 py-2.5 bg-[#fdfbf7] border border-[#2c1d11] text-[#2c1d11] hover:bg-[#2c1d11] hover:text-[#fdfbf7] transition-all rounded-xs shadow-[2px_2px_0px_#2c1d11] group"
             >
-              <span>{member.name}</span>
-              <span className="text-[10px] text-[#8c6d46] font-normal">↗</span>
+              <span className="truncate">{member.name}</span>
+              <span className="text-xs text-[#8c6d46] group-hover:text-[#fdfbf7] transition-colors shrink-0 ml-2">↗</span>
             </a>
           ))}
         </div>
