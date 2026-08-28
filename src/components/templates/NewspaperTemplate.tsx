@@ -1,6 +1,6 @@
 import React from "react";
 import { FeedbackBanner, Masthead } from "../molecules/Molecules";
-import { ArticleMain, ArticleWaste, NewspaperFooter } from "../organisms/Organisms";
+import { ArticleMain, SectionWhyItMatters, ArticleWaste, NewspaperFooter } from "../organisms/Organisms";
 
 export function NewspaperTemplate() {
   return (
@@ -14,6 +14,8 @@ export function NewspaperTemplate() {
         />
 
         <ArticleMain />
+
+        <SectionWhyItMatters />
 
         <ArticleWaste />
 

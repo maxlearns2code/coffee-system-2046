@@ -70,6 +70,22 @@ export function ArticleMain() {
   );
 }
 
+export function SectionWhyItMatters() {
+  return (
+    <section className="my-8 p-6 bg-[#f2ebd9] border-2 border-[#1c1917] rounded-sm">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="w-2.5 h-2.5 bg-[#8c6d46] rounded-full"></span>
+        <h3 className="font-serif text-xl sm:text-2xl font-black uppercase text-[#1c1917] tracking-wide">
+          Why It Matters
+        </h3>
+      </div>
+      <p className="font-serif text-base md:text-lg text-[#2c2416] leading-relaxed italic">
+        Humanity has always lived with limited resources. The future depends on how carefully we consume them — and on our ability to develop circular economy technologies that turn waste back into value.
+      </p>
+    </section>
+  );
+}
+
 export function ArticleWaste() {
   return (
     <article className="mb-10 pb-8 border-b-2 border-[#1c1917]">
