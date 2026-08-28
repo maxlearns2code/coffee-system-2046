@@ -81,7 +81,7 @@ export function FeedbackBanner({}: BannerProps) {
             📌 Complete The Feedback Loop
           </span>
           <p className="text-sm font-serif font-bold text-[#713f12] leading-snug">
-            Take the quiz below, write your answer on a Post-it, and stick it on our presentation board!
+            Read our 2046 vision, write your response on a Post-it, and stick it on our presentation board!
           </p>
         </div>
       </div>
