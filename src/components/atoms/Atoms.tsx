@@ -47,7 +47,7 @@ export function QuoteText({ children, author, className = "" }: QuoteTextProps) 
       {children}
       {author && (
         <footer className="not-italic text-xs font-mono font-bold text-[#8c6d46] mt-2">
-          — {author}
+          {author}
         </footer>
       )}
     </blockquote>
