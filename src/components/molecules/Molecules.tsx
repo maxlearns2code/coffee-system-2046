@@ -76,16 +76,27 @@ export function FeedbackBanner({}: BannerProps) {
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="space-y-2">
+        <div className="space-y-3">
           <span className="inline-block bg-[#854d0e] text-[#fef9c3] text-xs md:text-sm font-mono font-bold uppercase tracking-widest px-3 py-1 rounded-xs">
-            📌 STICK YOUR POST-IT TO OUR PRESENTATION
+            📌 COMPLETE THE FEEDBACK LOOP
           </span>
           <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-black text-[#713f12] leading-tight">
-            Read Our Vision — Then Leave Us a Post-It Note!
+            How to participate:
           </h3>
-          <p className="text-sm md:text-base font-sans font-semibold text-[#854d0e] leading-relaxed max-w-2xl">
-            After reading our 2046 vision, grab a physical Post-it note, write your feedback or thoughts, and stick it directly onto our presentation board to complete the circular harvest!
-          </p>
+          <ul className="space-y-1.5 text-sm md:text-base font-sans font-semibold text-[#854d0e] text-left">
+            <li className="flex items-center gap-2">
+              <span className="w-6 h-6 bg-[#854d0e] text-white rounded-full text-xs flex items-center justify-center font-mono font-bold shrink-0">1</span>
+              <span><strong>Read</strong> our 2046 vision below</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="w-6 h-6 bg-[#854d0e] text-white rounded-full text-xs flex items-center justify-center font-mono font-bold shrink-0">2</span>
+              <span><strong>Write</strong> your thoughts on a physical Post-it note</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="w-6 h-6 bg-[#854d0e] text-white rounded-full text-xs flex items-center justify-center font-mono font-bold shrink-0">3</span>
+              <span><strong>Stick</strong> your Post-it on our presentation board!</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
