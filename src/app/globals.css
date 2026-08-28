@@ -4,6 +4,15 @@
   :root {
     --font-serif: var(--font-playfair), Georgia, Cambria, "Times New Roman", Times, serif;
     --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+    
+    /* Unified Coffee & Newspaper Design Tokens */
+    --bg-page: #f4ece1;
+    --bg-paper: #fdfbf7;
+    --bg-card: #f4ece1;
+    --text-primary: #1c1917;
+    --text-secondary: #4a382c;
+    --border-dark: #2c1d11;
+    --accent-coffee: #8c6d46;
   }
 }
 

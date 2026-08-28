@@ -48,13 +48,13 @@ export function ArticleMain() {
           Today, farm-grown coffee is a proud premium choice, and lab-grown coffee is the reliable, everyday option. Coffee stayed a daily ritual for everyone — not just the few who could afford it.
         </p>
 
-        <QuoteText>
+        <QuoteText className="bg-[#f4ece1] border-[#8c6d46]">
           &ldquo;We built the backup before we needed it. That’s what saved the cup.&rdquo;
         </QuoteText>
 
         {/* Editorial Diagram of The Backup Bean System */}
-        <figure className="mt-6 pt-4 border-t border-[#1c1917]/20 space-y-2">
-          <div className="border border-[#1c1917] bg-[#fdfbf7] p-4 shadow-[3px_3px_0px_#1c1917] overflow-hidden rounded-xs flex items-center justify-center">
+        <figure className="mt-6 pt-4 border-t border-[#2c1d11]/20 space-y-2">
+          <div className="border border-[#2c1d11] bg-[#f4ece1] p-4 shadow-[3px_3px_0px_#2c1d11] overflow-hidden rounded-xs flex items-center justify-center">
             <img
               src="/backup_bean_clean.png"
               alt="The Backup Bean cellular coffee production system diagram"
@@ -88,7 +88,7 @@ export function SectionWhyItMatters() {
 
 export function ArticleWaste() {
   return (
-    <article className="mb-10 pb-8 border-b-2 border-[#1c1917]">
+    <article className="mb-10 pb-8 border-b-2 border-[#2c1d11]">
       <Badge variant="green" className="mb-3">
         SUSTAINABILITY & CIRCULARITY • AUGUST 2046
       </Badge>
@@ -110,7 +110,7 @@ export function ArticleWaste() {
           Today, more than <strong>70% of coffee husks</strong> are used to produce biofuel instead of being thrown away. Coffee pulp is used as organic fertilizer, returning nutrients to the soil. New technologies also allow wastewater from coffee processing to be cleaned and reused.
         </p>
 
-        <QuoteText author="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance" className="bg-[#eef6ec] border-[#2e6930]">
+        <QuoteText author="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance" className="bg-[#f4ece1] border-[#8c6d46]">
           “Waste is no longer waste — it’s a valuable resource. After decades of cooperation between farmers, scientists, governments and companies, we are finally seeing the results.”
         </QuoteText>
 
@@ -119,8 +119,8 @@ export function ArticleWaste() {
         </p>
 
         {/* Editorial Photo of Dr. Nimimo Maolg */}
-        <figure className="mt-6 pt-4 border-t border-[#1c1917]/20 space-y-2">
-          <div className="border border-[#1c1917] bg-[#ede4ce] p-1 shadow-[3px_3px_0px_#1c1917]">
+        <figure className="mt-6 pt-4 border-t border-[#2c1d11]/20 space-y-2">
+          <div className="border border-[#2c1d11] bg-[#f4ece1] p-1 shadow-[3px_3px_0px_#2c1d11]">
             <img
               src="/dr_nimimo_maolg.jpg"
               alt="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance"

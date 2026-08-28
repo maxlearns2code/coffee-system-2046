@@ -27,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} antialiased`}
     >
-      <body className="bg-[#f9f6f0] text-[#1c1917] min-h-screen font-sans selection:bg-[#c28e5d] selection:text-white">
+      <body className="bg-[#f4ece1] text-[#1c1917] min-h-screen font-sans selection:bg-[#8c6d46] selection:text-white">
         {children}
       </body>
     </html>
