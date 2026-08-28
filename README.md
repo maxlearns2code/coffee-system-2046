@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Coffee System 2046: The Circular Harvest ☕🌱
 
-## Getting Started
+> **Front Page Newspaper of 2046** — An interactive editorial experience depicting the preferred future of global coffee systems, agroforestry governance, and closed-loop economic protocols.
 
-First, run the development server:
+Live Target Domain: [https://coffee-system-2046.vercel.app](https://coffee-system-2046.vercel.app)  
+GitHub Repository: [https://github.com/maxlearns2code/coffee-system-2046.git](https://github.com/maxlearns2code/coffee-system-2046.git)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 Project Overview & Problem Baselines
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2026 Problem Baseline (The Broken Linear Chain)
+- **C-Price Financial Speculation**: Wall Street futures exchanges dictate coffee bean values, stripping producers of equity and leaving smallholders with only **~3% of retail cup value**.
+- **Monoculture & Soil Degradation**: Chemical-intensive sun monoculture causes **68% soil biodiversity loss** and leaves harvests vulnerable to climate shocks.
+- **Ecological Acidification**: Millions of tons of wet mill effluent and municipal spent grounds dumped into waterways and landfills, generating severe methane emissions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2046 Preferred Future (The Circular Harvest)
+- **Direct-Value Protocol**: Abolished C-Price speculation with decentralized smart contracts locking in a **42% producer equity floor**.
+- **Polyculture Agroforestry**: Multi-strata native shade tree canopy restoring soil carbon (+140%) and micro-climate buffering.
+- **Closed-Loop Bio-Refining**: 100% upcycled coffee cherries (cascara elixirs, organic fertilizers, bioplastics) closing all nutrient loops.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack & Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **Print Optimization**: `@media print` rules tailored for A4/A3 single-page editorial newspaper layout (`-webkit-print-color-adjust: exact`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎮 Interactive Features Guide
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Temporal Lens Toggle**: Seamlessly switch between the **2026 Broken Linear Chain** and the **2046 Closed-Loop System**.
+2. **6-Stage Interactive Loop**: Click through system nodes (*Living Soil/Canopy*, *Hand-Harvest*, *Direct-Value Protocol*, *Eco-Logistics*, *Roaster/Consumer*, *Bio-Refining*) to view side-by-side comparative data.
+3. **Value-Distribution Slider**: Interactively shift producer revenue share from the 2026 baseline (~3%) up to 42% and observe dynamic cup payout calculations.
+4. **Coffee Governance Game / Simulator**: A 3-question interactive scenario test evaluating decisions across **Farmer Equity**, **Ecosystem Health**, and **Market Stability**.
+5. **Print-Ready Editorial Layout**: Click **Print Newspaper** to export or render a physical newspaper front page with screen-only controls cleanly hidden (`.no-print`).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Deployment Instructions for Vercel
+
+1. **Push Repository to GitHub**:
+   ```bash
+   git push -u origin main
+   ```
+
+2. **Deploy to Vercel**:
+   - Log into your [Vercel Dashboard](https://vercel.com).
+   - Click **Add New > Project** and import `maxlearns2code/coffee-system-2046`.
+   - Keep default Next.js build settings (`npm run build`).
+   - Assign custom domain `coffee-system-2046.vercel.app` in project settings.
+
+---
+
+## ✒️ Step-by-Step Commit History
+
+- **Step 1**: Initialized Next.js project with App Router, TypeScript, Tailwind CSS, `lucide-react`, and `framer-motion`.
+- **Step 2**: Configured `@media print` rules, `-webkit-print-color-adjust: exact`, `.no-print` hiding, and single-page A4 scaling in `src/app/globals.css`.
+- **Step 3 & 4**: Built interactive core (Time Toggle, 6 System Nodes, Value Slider, Coffee Governance Game) and 2046 front-page newspaper structure.
+- **Step 5**: Created comprehensive documentation in `README.md`.
