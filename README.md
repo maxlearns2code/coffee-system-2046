@@ -1,6 +1,6 @@
 # The Backup Bean (The Coffee System 2046) ☕🌱
 
-> **Vision Landing Page & Editorial Newspaper** for **The Backup Bean** — a circular harvest vision for 2046. Designed to complete the physical presentation feedback loop: scan the QR code on our printable poster, explore the 2046 vision, and attach your physical Post-it note to the presentation board.
+> **Vision Landing Page & Editorial Newspaper** for **The Backup Bean**, a circular harvest vision for 2046. Designed to complete the physical presentation feedback loop: scan the QR code on our printable poster, explore the 2046 vision, and attach your physical Post-it note to the presentation board.
 
 Live Target Domain: [https://coffee-system-2046.vercel.app](https://coffee-system-2046.vercel.app)  
 GitHub Repository: [https://github.com/maxlearns2code/coffee-system-2046.git](https://github.com/maxlearns2code/coffee-system-2046.git)
