@@ -58,6 +58,10 @@ export function ArticleMain() {
             <img
               src="/backup_bean.webp"
               alt="The Backup Bean cellular coffee production system diagram"
+              width={320}
+              height={420}
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto object-cover transition-all duration-300 rounded-xs"
             />
           </div>
@@ -124,6 +128,10 @@ export function ArticleWaste() {
             <img
               src="/dr_nimimo.webp"
               alt="Dr. Nimimo Maolg, Director of the Global Coffee Circularity Alliance"
+              width={320}
+              height={320}
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300 rounded-xs"
             />
           </div>
