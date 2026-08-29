@@ -50,7 +50,7 @@ The application is structured strictly using **Atomic Design Principles**:
   - `FeedbackBanner`: High-visibility callout box featuring the uploaded presentation QR code and a 3-step participation guide.
   - `AccomplishmentsBox`: Structured achievements list with dark espresso bullet points.
 - **Organisms (`src/components/organisms/Organisms.tsx`)**:
-  - `ArticleMain`: Retrospective report with tight-framed technical schematic (`/backup_bean_clean.webp`).
+  - `ArticleMain`: Retrospective report with tight-framed technical schematic (`/backup_bean.webp`).
   - `SectionWhyItMatters`: Lightened callout card with dark espresso borders.
   - `ArticleWaste`: Circularity report featuring Dr. Nimimo Maolg's portrait (`/dr_nimimo.webp`).
   - `NewspaperFooter`: Publication metadata and a responsive 3-column grid of Editorial & Redaction Team LinkedIn links.
@@ -63,7 +63,7 @@ The application is structured strictly using **Atomic Design Principles**:
 
 - **Vercel Analytics**: Fully integrated `@vercel/analytics` in `RootLayout` (`src/app/layout.tsx`) for real-time traffic and performance monitoring.
 - **Modern Build Baseline**: Optimized `next.config.ts` for SWC ES2022+ output to eliminate legacy polyfills (e.g. `Array.prototype.at`, `Object.hasOwn`).
-- **WebP Image Compression**: All visual assets optimized to lightweight WebP formats (`backup_bean_clean.webp`, `dr_nimimo.webp`).
+- **WebP Image Compression**: All visual assets optimized to lightweight WebP formats (`backup_bean.webp`, `dr_nimimo.webp`).
 - **WAVE & HTML5 Accessibility**: Strict `H1` -> `H2` -> `H3` heading flow, semantic landmarks (`<header>`, `<main>`, `<article>`, `<figure>`, `<footer>`), and accessible WCAG contrast ratios.
 
 ---
