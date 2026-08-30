@@ -150,7 +150,7 @@ export function NewspaperFooter() {
     { name: "Memoona Wahid", url: "https://www.linkedin.com/in/memoona-wahid/" },
     { name: "Olga Kotova", url: "https://www.linkedin.com/in/ohkotova" },
     { name: "Maxime Dewynter", url: "https://www.linkedin.com/in/maxime-dewynter/" },
-    { name: "Miki S.", url: "https://www.linkedin.com/in/miki-s-950841150/" },
+    { name: "Miki Stojanovski", url: "https://www.linkedin.com/in/miki-s-950841150/" },
   ];
 
   return (

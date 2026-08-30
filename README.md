@@ -74,7 +74,7 @@ The application is structured strictly using **Atomic Design Principles**:
 - **Memoona Wahid**: [LinkedIn Profile](https://www.linkedin.com/in/memoona-wahid/)
 - **Olga Kotova**: [LinkedIn Profile](https://www.linkedin.com/in/ohkotova)
 - **Maxime Dewynter**: [LinkedIn Profile](https://www.linkedin.com/in/maxime-dewynter/)
-- **Miki S.**: [LinkedIn Profile](https://www.linkedin.com/in/miki-s-950841150/)
+- **Miki Stojanovski**: [LinkedIn Profile](https://www.linkedin.com/in/miki-s-950841150/)
 
 ---
 
